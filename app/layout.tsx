@@ -1,7 +1,7 @@
+import type { Metadata } from "next"
 import { Libre_Baskerville } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'
-import { Metadata } from 'next'
-import '@/app/globals.css'
+import "./globals.css"
+import type React from "react" // Import React
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
@@ -10,8 +10,8 @@ const libreBaskerville = Libre_Baskerville({
 })
 
 export const metadata: Metadata = {
-  title: 'Pra Ver Ouvir',
-  description: 'Audiodescrição com poesia para produzir e acessibilizar conteúdos, produtos, projetos e eventos visuais.',
+  title: "Pra Ver Ouvir - Por um mundo mais acessível",
+  description: "Empresa especializada em audiodescrição e acessibilidade em Maceió/AL",
 }
 
 export default function RootLayout({
@@ -20,8 +20,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={`${libreBaskerville.variable}`}>
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <body className={libreBaskerville.className}>{children}</body>
     </html>
   )
 }
+

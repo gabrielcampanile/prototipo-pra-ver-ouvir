@@ -7,7 +7,7 @@ import {
   Calendar,
   Headphones,
   Mail,
-  MapPin,
+  // MapPin,
   Newspaper,
   Phone,
   Trophy,
