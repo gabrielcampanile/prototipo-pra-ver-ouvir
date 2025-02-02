@@ -3,7 +3,12 @@
 import { useState } from "react"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { 
+  Sheet, 
+  SheetContent, 
+  SheetTrigger,
+  SheetTitle 
+} from "@/components/ui/sheet"
 import { NavLink } from "./nav-link"
 
 const navigationItems = [
@@ -27,6 +32,7 @@ export function MobileMenu() {
         </Button>
       </SheetTrigger>
       <SheetContent side="right">
+        <SheetTitle>Menu de Navegação</SheetTitle>
         <nav className="flex flex-col gap-4 mt-8">
           {navigationItems.map((item) => (
             <NavLink
@@ -38,14 +44,6 @@ export function MobileMenu() {
               {item.label}
             </NavLink>
           ))}
-          <Button asChild className="mt-4">
-            <NavLink 
-              href="orcamento"
-              onClick={() => setOpen(false)}
-            >
-              Solicitar Orçamento
-            </NavLink>
-          </Button>
         </nav>
       </SheetContent>
     </Sheet>

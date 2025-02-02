@@ -181,4 +181,12 @@
   body {
     @apply font-serif;
   }
+
+  :root[data-high-contrast="true"] {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+  }
 }
+

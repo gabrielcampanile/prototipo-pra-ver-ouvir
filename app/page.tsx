@@ -17,7 +17,6 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SkipLink } from "@/components/skip-link";
 import { ServiceCard } from "@/components/service-card";
 import { PortfolioCard } from "@/components/portfolio-card";
 import { BudgetForm } from "@/components/budget-form";
@@ -28,7 +27,6 @@ import { Header } from "@/components/header";
 export default function Home() {
   return (
     <>
-      <SkipLink />
       <Header />
 
       <main id="main" tabIndex={-1} className="min-h-screen">
@@ -48,9 +46,10 @@ export default function Home() {
             <div>
               <p className="text-lg mb-4">
                 A Pra Ver Ouvir germinou em 2022 como projeto acessível e
-                floresceu em 2023 como empresa. Com o lema &quot;por um mundo mais
-                acessível&quot;, unimos Audiodescrição com Poesia para produzir e
-                acessibilizar conteúdos, produtos, projetos e eventos visuais.
+                floresceu em 2023 como empresa. Com o lema &quot;por um mundo
+                mais acessível&quot;, unimos Audiodescrição com Poesia para
+                produzir e acessibilizar conteúdos, produtos, projetos e eventos
+                visuais.
               </p>
               <p className="text-lg">
                 Nossa equipe é formada por audiodescritores qualificados,
@@ -63,7 +62,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Nossa Equipe</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-2 gap-8">
+              <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex items-center gap-6">
                   <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden flex-shrink-0">
                     <Image
