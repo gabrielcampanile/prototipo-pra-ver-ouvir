@@ -80,6 +80,15 @@ export function Footer() {
             </div>
           </div>
         </div>
+        <div className="border-t mt-8 pt-4 flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-4">
+          <p>&copy; 2025 Pra Ver Ouvir</p>
+          <p>
+            Todos os direitos reservados® 
+          </p>
+          <p>
+            Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-belchior-campanile/" target="_blank" className="font-bold underline hover:text-gray-400"> Gabriel Belchior</a>
+          </p>
+        </div>
       </div>
     </footer>
   )
