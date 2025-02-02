@@ -48,8 +48,8 @@ export default function Home() {
             <div>
               <p className="text-lg mb-4">
                 A Pra Ver Ouvir germinou em 2022 como projeto acessível e
-                floresceu em 2023 como empresa. Com o lema "por um mundo mais
-                acessível", unimos Audiodescrição com Poesia para produzir e
+                floresceu em 2023 como empresa. Com o lema &apos;por um mundo mais
+                acessível&apos;, unimos Audiodescrição com Poesia para produzir e
                 acessibilizar conteúdos, produtos, projetos e eventos visuais.
               </p>
               <p className="text-lg">
@@ -174,7 +174,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Projeto "LabPARAtodos" - Outubro, 2023
+                  Projeto &apos; LabPARAtodos &apos; - Outubro, 2023
                 </p>
                 <Image
                   src="/images/prize1.png"
@@ -265,7 +265,7 @@ export default function Home() {
               <CardContent>
                 <p className="mb-4">
                   Fomos premiados no Encontro Nacional de Acessibilidade pelo
-                  projeto "Memes Pra Ver Ouvir".
+                  projeto &apos;Memes Pra Ver Ouvir&apos;.
                 </p>
                 <Button>
                   <Link href="#premiacoes">Ver prêmio</Link>
