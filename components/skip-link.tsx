@@ -1,18 +1,13 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-
 export function SkipLink() {
   return (
-    <Button
-      className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:translate-y-4"
-      onClick={() => {
-        const main = document.querySelector("main")
-        main?.focus()
-      }}
+    <a
+      href="#main"
+      className="fixed top-0 left-0 z-[100] m-3 -translate-y-full transform rounded-md bg-primary px-4 py-2 text-primary-foreground transition-transform focus:translate-y-0"
     >
       Pular para o conteúdo principal
-    </Button>
+    </a>
   )
 }
 
